@@ -1,0 +1,18 @@
+# Dependências e Pacotes
+node_modules/
+
+# Variáveis de Ambiente e Segredos
+.env
+.env.local
+
+# Relatórios e Saídas do k6
+*.csv
+*.json
+reports/
+out/
+
+# Configurações de IDE e SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
