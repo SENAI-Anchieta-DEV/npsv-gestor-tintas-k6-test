@@ -22,7 +22,7 @@ export const options = {
 // SETUP: Autenticação (Executado 1 única vez antes dos VUs iniciarem)
 export function setup() {
     // Insira credenciais válidas do seu banco local de desenvolvimento com perfil ADMIN
-    getAuthToken(environments.admin.email, environments.admin.senha); 
+    const token = getAuthToken(environments.admin.email, environments.admin.senha);
     return { token };
 }
 

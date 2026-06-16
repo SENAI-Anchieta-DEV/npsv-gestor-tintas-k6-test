@@ -1,8 +1,10 @@
-export const environments = {
-    local: __ENV.BASE_URL || 'http://localhost:8080', 
+ const baseUrl = __ENV.BASE_URL || 'http://localhost:8080';
 
-    admin: {
-        email: __ENV.ADMIN_EMAIL || 'admin@gestortintas.com',
-        senha: __ENV.ADMIN_SENHA || 'admin'
-    }
-};
+ export const environments = {
+     local: baseUrl,
+     api: baseUrl,
+     admin: {
+         email: __ENV.ADMIN_EMAIL,
+         senha: __ENV.ADMIN_SENHA,
+     },
+ };
